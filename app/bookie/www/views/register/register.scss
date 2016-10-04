@@ -1,0 +1,50 @@
+.register-wrapper {
+
+  ion-view {
+
+    background-image: url('../../assets/images/backg.jpg');
+    //background-image: url('assets/images/backg.jpg');
+  }
+
+  .list {
+
+    margin-top: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+  }
+
+  input {
+
+    color: #00685a;
+    font-weight:200;
+    font-size: 14px;
+
+  }
+
+  .input-label {
+
+    color: #00685a;
+    font-weight: 400;
+    font-size: 14px;
+
+  }
+
+  input::-webkit-input-placeholder {
+    color: #00685a;
+
+  }
+  input:-moz-placeholder {
+    color: #00685a ;
+
+  }
+
+  .centered {
+
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+  }
+
+
+}

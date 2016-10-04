@@ -1,0 +1,41 @@
+<div class="register-wrapper">
+
+  <ion-view view-title="main module">
+    <!-- do you want padding? -->
+    <ion-content class="padding" scroll="false">
+      <!-- content goes here -->
+      <div class="list">
+
+        <div class="racquet">
+          <h3>BookieApp</h3>
+          <img src="../../assets/images/tennis2.png">
+        </div>
+
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Email</span>
+          <input type="email"
+                 placeholder="Email"
+                 ng-model="user.email"
+                 ng-required="true">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Password</span>
+          <input type="password"
+                 placeholder="Password"
+                 autocomplete="new-password"
+                 ng-model="user.password"
+                 ng-required="true">
+        </label>
+      </div>
+
+
+      <div class="btn-container">
+        <div class="button button-balanced button-block" ng-click="register()">Register</div>
+        <div class="centered">If you already have an account <span><a ui-sref="login">Login</a></span></div>
+      </div>
+
+
+    </ion-content>
+  </ion-view>
+
+</div>
