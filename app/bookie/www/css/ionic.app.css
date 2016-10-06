@@ -9864,3 +9864,13 @@ a.button {
 
 h1 {
   color: #969351; }
+
+.location-selection-wrapper .court-title {
+  font-size: 20px;
+  font-weight: 200px; }
+
+.location-selection-wrapper .court-address {
+  font-weight: 800; }
+
+.location-selection-wrapper .favorites > .item-content {
+  background-color: #f9f4df !important; }

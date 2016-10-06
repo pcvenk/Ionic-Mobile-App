@@ -48,10 +48,10 @@ angular.module('starter', ['ionic',  'ionic-material'])
 
       .state('app.court-selection', {
 
-        url:'/court-selection',
+        url:'/location-selection',
         views:{
           'menuContent':{
-            templateUrl:'views/court-selection/court-selection.html',
+            templateUrl:'views/location-selection/location-selection.html',
             controller:'CourtSelectionCtrl'
           }
         }
@@ -69,7 +69,7 @@ angular.module('starter', ['ionic',  'ionic-material'])
       });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/court-selection');
+    $urlRouterProvider.otherwise('/app/location-selection');
   });
 
 angular.module('starter').run(function($rootScope) {
