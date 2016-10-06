@@ -1,0 +1,24 @@
+<div class="location-details-wrapper">
+
+  <ion-view view-title="Več informacij">
+    <ion-content class="padding">
+      <ion-list ng-repeat="court in courts | filter: {name: selectedCourt}">
+
+        <ion-item class="item-text-wrap">
+          <h1 class="court-title text-center">{{court.name}}</h1>
+
+          <div class="item item-image">
+            <img ng-src="{{court.image}}">
+          </div>
+          <br>
+          <hr>
+          <br>
+          <h2 class="court-address">{{court.address}}, {{court.postalCode}} {{court.location}}</h2>
+          <p class="description">{{court.fulldescription}}</p>
+        </ion-item>
+      </ion-list>
+
+    </ion-content>
+  </ion-view>
+
+</div>
