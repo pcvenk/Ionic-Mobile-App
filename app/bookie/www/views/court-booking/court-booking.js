@@ -1,4 +1,4 @@
-angular.module('starter').controller('CourtBookingCtrl', function($scope){
-
+angular.module('starter').controller('CourtBookingCtrl', function($scope, $http, $filter, uiCalendarConfig){
+git add .
 
 });

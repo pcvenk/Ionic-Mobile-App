@@ -4,7 +4,8 @@
   "location": "Bled",
   "postalCode": "4260",
   "image": "../../assets/images/tennis-locations/igrišča_TC_Bled.jpg",
-  "fulldescription": "Teniški center Bled je bil ustanovljen leta 1995 in ponuja 6 teniških igrišč, ki so od središča mesta oddaljena 2 km. Lokacija je na senčni strani, kar omogoča prijetno vadbo tudi poleti pri visokih temperaturah.Pozimi treningi potekajo v pokriti dvorani v Žirovnici."
+  "fulldescription": "Teniški center Bled je bil ustanovljen leta 1995 in ponuja 6 teniških igrišč, ki so od središča mesta oddaljena 2 km. Lokacija je na senčni strani, kar omogoča prijetno vadbo tudi poleti pri visokih temperaturah.Pozimi treningi potekajo v pokriti dvorani v Žirovnici.",
+  "courtNumber": 6
 }, {
   "name": "Športni Center Dolgi Most",
   "address": "Dolgi most 6A",

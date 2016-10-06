@@ -1,7 +1,11 @@
 <ion-view view-title="Select an hour to play">
-  <ion-content class="padding">
+  <ion-content class="padding has-header">
 
   <h1>Select a day to play on</h1>
+
+    <div class="calendar" ng-model="eventSources" calendar="myCalendar" config="uiConfig.calendar" ui-calendar="uiConfig.calendar"></div>
+
+
 
   </ion-content>
 </ion-view>

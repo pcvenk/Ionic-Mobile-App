@@ -16,6 +16,18 @@ angular.module('starter').controller('CourtSelectionCtrl', function($scope, $htt
 
   };
 
+  $scope.moreInfo = function(){
+
+    href="#/app/location-selection/{{court.name}}"
+
+  };
+
+  $scope.bookCourt = function(){
+
+    $state.go('app.court-booking');
+
+  }
+
 
 });
 
