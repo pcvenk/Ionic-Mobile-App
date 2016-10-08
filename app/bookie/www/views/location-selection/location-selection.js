@@ -14,19 +14,12 @@ angular.module('starter').controller('CourtSelectionCtrl', function($scope, $htt
 
     court.favorites = !court.favorites;
 
+    if(court.favorites){
+      $scope.courts.favourites = true;
+    }
+    $scope.courts.push(court);
+
   };
-
-  $scope.moreInfo = function(){
-
-    href="#/app/location-selection/{{court.name}}"
-
-  };
-
-  $scope.bookCourt = function(){
-
-    $state.go('app.court-booking');
-
-  }
 
 
 });

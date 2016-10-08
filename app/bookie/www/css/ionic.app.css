@@ -9862,12 +9862,16 @@ a.button {
   text-align: center;
   font-size: 15px; }
 
-h1 {
-  color: #004358;
-  font-weight: 800; }
+.court-booking-wrapper .selected-court {
+  margin-top: 15px; }
 
-a {
-  text-decoration: none !important; }
+.court-booking-wrapper h3 {
+  font-size: 20px;
+  font-weight: 200px;
+  color: #004358; }
+
+.court-booking-wrapper .booked {
+  background-color: #434296; }
 
 .location-selection-wrapper .court-title {
   font-size: 20px;
@@ -9878,3 +9882,7 @@ a {
 
 .location-selection-wrapper .favorites > .item-content {
   background-color: #f9f4df !important; }
+
+h1 {
+  color: #004358;
+  font-weight: 800; }

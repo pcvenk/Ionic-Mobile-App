@@ -1,11 +1,52 @@
-<ion-view view-title="Select an hour to play">
-  <ion-content class="padding has-header">
+<div class="court-booking-wrapper">
 
-  <h1>Select a day to play on</h1>
+  <ion-view view-title="Rezerviraj igrišče">
+    <ion-content class="padding has-header">
 
-    <div class="calendar" ng-model="eventSources" calendar="myCalendar" config="uiConfig.calendar" ui-calendar="uiConfig.calendar"></div>
+      <h1 ng-repeat="court in courts | filter: {name: selectedCourt}"
+          class="selected-court text-center">{{court.name}}</h1>
+
+      <!--<div class="calendar" ng-model="eventSources" calendar="myCalendar" config="uiConfig.calendar" ui-calendar="uiConfig.calendar"></div>-->
+
+      <!--<court-select courts="courts"></court-select>-->
 
 
+      <div class="row center-block">
+        <div class="col col-50">
+          <label class="item item-input item-select">
+            <div class="input-label">Igrišče</div>
+            <select ng-model="model.court"
+                    ng-options="number as number for number in courtNumber">
+            </select>
+          </label>
+        </div>
 
-  </ion-content>
-</ion-view>
+        <div class="col col-50">
+          <label class="item item-input item-select">
+            <div class="input-label">Ura</div>
+            <select ng-model="model.hours"
+                    ng-options="hour as hour for hour in hoursArray">
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <h3 class="text-center">{{model.court}}. igrišče</h3>
+
+      <table ng-show="model.court" class="table table-striped">
+        <tbody>
+        <tr ng-repeat="hour in hoursArray">
+
+
+          <td ng-click="showPopup(hour)"
+              ng-class="{'booked': hours.confirmed}"
+          >{{hour}}.00</td>
+        </tr>
+        </tbody>
+      </table>
+
+    </ion-content>
+  </ion-view>
+
+
+</div>

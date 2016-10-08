@@ -52,7 +52,6 @@ angular.module('starter', [
       })
 
       .state('app.court-selection', {
-
         url:'/location-selection',
         views:{
           'menuContent':{
@@ -60,11 +59,9 @@ angular.module('starter', [
             controller:'CourtSelectionCtrl'
           }
         }
-
       })
 
       .state('app.court-detail', {
-
         url:'/location-selection/:courtID',
         views:{
           'menuContent':{
@@ -72,11 +69,20 @@ angular.module('starter', [
             controller:'CourtSelectionCtrl'
           }
         }
+      })
 
+      .state('app.favourite-courts', {
+        url:'/favourite-courts',
+        views:{
+          'menuContent':{
+            templateUrl:'views/favourite-courts/favourite-courts.html',
+            controller:'FavouriteCourtsCtrl'
+          }
+        }
       })
 
       .state('app.court-booking', {
-        url:'/court-booking',
+        url:'/court-booking/:number/:name',
         views:{
           'menuContent':{
             templateUrl:'views/court-booking/court-booking.html',
@@ -84,6 +90,8 @@ angular.module('starter', [
           }
         }
       });
+
+
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/app/location-selection');

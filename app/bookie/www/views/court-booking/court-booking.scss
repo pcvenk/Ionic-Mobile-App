@@ -1,6 +1,22 @@
-h1  {
+.court-booking-wrapper {
 
-  color: #004358;
-  font-weight: 800;
+  .selected-court {
+
+    margin-top: 15px;
+  }
+
+  h3 {
+
+    font-size: 20px;
+    font-weight: 200px;
+    color: #004358;
+
+  }
+
+  .booked {
+
+    background-color: #434296;
+
+  }
 
 }
