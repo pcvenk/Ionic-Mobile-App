@@ -9871,7 +9871,7 @@ a.button {
   color: #004358; }
 
 .court-booking-wrapper .booked {
-  background-color: #434296; }
+  background-color: #434296 !important; }
 
 .location-selection-wrapper .court-title {
   font-size: 20px;
@@ -9886,3 +9886,6 @@ a.button {
 h1 {
   color: #004358;
   font-weight: 800; }
+
+.favorites > .item-content {
+  background-color: #f9f4df !important; }

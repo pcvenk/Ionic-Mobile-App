@@ -15,7 +15,7 @@
 
       <ion-list>
         <ion-item class="item-avatar item-text-wrap item-icon-right"
-                  ng-repeat="court in courts | filter: court.name"
+                  ng-repeat="court in courtList | filter: court.name"
                   ng-class="{'favorites': court.favorites}"
                   >
           <img ng-src="{{court.image}}">

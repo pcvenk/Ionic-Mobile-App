@@ -1,12 +1,14 @@
-angular.module('starter').controller('CourtSelectionCtrl', function($scope, $http, $state, $stateParams){
+angular.module('starter').controller('CourtSelectionCtrl', function($scope, $http, $state){
 
-
-  $scope.courts = [];
+ $scope.courts = [];
 
   $http.get('../../assets/data/courts.json').success(function(data){
 
-    $scope.courts = data;
+
     $scope.selectedCourt = $state.params.courtID;
+    $scope.courtList = data;
+    angular.copy($scope.courtList,$scope.courts);
+
 
   });
 
@@ -15,12 +17,13 @@ angular.module('starter').controller('CourtSelectionCtrl', function($scope, $htt
     court.favorites = !court.favorites;
 
     if(court.favorites){
-      $scope.courts.favourites = true;
+      $scope.court.favourites = true;
+      $scope.courts.push(court);
     }
-    $scope.courts.push(court);
 
   };
 
+  console.log($scope.courts);
 
 });
 

@@ -6,6 +6,7 @@ module.exports = function(app){
 
     // API routes
 
+
     // app.get('/api/users', function(req, res){
     //
     //     var User = mongoose.model('User');
@@ -87,7 +88,7 @@ module.exports = function(app){
 
 
                 data.password = hash;
-                res.send()
+
                 var userDoc = {
                     email       : data.email,
                     password    : hash

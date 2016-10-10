@@ -9,7 +9,7 @@ var init = function(){
 
 
         require('./server/models/registered-user');
-        require('./server/models/location');
+
 
         server.start();
 

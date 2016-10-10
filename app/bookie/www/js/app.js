@@ -59,6 +59,7 @@ angular.module('starter', [
             controller:'CourtSelectionCtrl'
           }
         }
+
       })
 
       .state('app.court-detail', {
@@ -76,7 +77,7 @@ angular.module('starter', [
         views:{
           'menuContent':{
             templateUrl:'views/favourite-courts/favourite-courts.html',
-            controller:'FavouriteCourtsCtrl'
+            controller:'CourtSelectionCtrl'
           }
         }
       })

@@ -9,7 +9,9 @@ angular.module('starter').controller('CourtBookingCtrl', function(
   $scope.courts = [];
 
   $scope.model = {
-    court: 1
+    court: 1,
+    selected: true,
+    day: Date.now()
 
   };
 
@@ -30,28 +32,48 @@ angular.module('starter').controller('CourtBookingCtrl', function(
         $scope.courtNumber.push(i);
       }
 
-      // console.log($scope.courtNumber);
+
   });
+
+  $scope.daysArray = [];
+
+  $scope.formattedDate = new Date(Date.now());
+  $scope.year = $scope.formattedDate.getFullYear();
+  $scope.month = $scope.formattedDate.getMonth() +1;
+
+  if($scope.month<10){
+    $scope.month = '0' + $scope.month;
+  }
+
+  $scope.date = $scope.formattedDate.getDate();
+
+  if($scope.date<10){
+    $scope.date = '0' + $scope.date;
+  }
+
+  $scope.newDate = $scope.date + '/' + $scope.month;
+
+  for(var k = $scope.newDate; k < $scope.newDate+7; k++){
+
+    $scope.daysArray.push(k);
+
+  }
 
   $scope.hoursArray = [];
 
-  for(var j=9; j<22;j++){
+  for(var j = 9; j < 22; j++){
 
     $scope.hoursArray.push(j);
 
   }
 
-
-  $scope.selectedHour = {
-    confirm: true
-  };
+  $scope.selected = $scope.selectedHour;
 
 
   $scope.showPopup = function(hour) {
 
-
     //pass in the selected hour
-    $scope.hours = {
+    $scope.selectedHour = {
       hrs: hour,
       confirmed: false
     };
@@ -59,7 +81,7 @@ angular.module('starter').controller('CourtBookingCtrl', function(
 
     // An elaborate, custom popup
     var myPopup = $ionicPopup.show({
-      template: '<p>Ali želiš rezervirati igrišče ob {{hours.hrs}}.00?</p>',
+      template: '<p>Ali želiš rezervirati igrišče ob {{selectedHour.hrs}}.00?</p>',
       title: 'Rezerviraj igrišče',
       scope: $scope,
       buttons: [
@@ -68,7 +90,6 @@ angular.module('starter').controller('CourtBookingCtrl', function(
           type: 'button-balanced button-outline',
           onTap: function(e) {
 
-            $scope.hours.confirmed = false;
             return true;
 
           }
@@ -76,12 +97,11 @@ angular.module('starter').controller('CourtBookingCtrl', function(
         {
           text: 'Potrdi',
           type: 'button-balanced',
-          onTap: function(e) {
+          onTap: function() {
 
-            $scope.hours.confirmed = true;
-            $scope.hours.confirmed = $scope.selectedHour.confirm;
+            $scope.selectedHour.confirmed = true;
+
             return true;
-
 
           }
         }
@@ -89,11 +109,11 @@ angular.module('starter').controller('CourtBookingCtrl', function(
     });
 
     myPopup.then(function(res) {
-      console.log($scope.hours.confirmed, res);
+      console.log($scope.selectedHour.confirmed , res);
     });
 
     $timeout(function() {
-      myPopup.close(); //close the popup after 3 seconds for some reason
+      myPopup.close($scope.selectedHour); //close the popup after 3 seconds for some reason
     }, 5000);
   };
 
