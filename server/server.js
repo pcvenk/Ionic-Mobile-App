@@ -26,7 +26,8 @@ module.exports = {
         }));
 
         
-        app.use('/home', express.static('app//bookie/www'));
+        app.use('/home', express.static('app/bookie/www'));
+        app.use('/assets', express.static('server/public/assets'));
 
         app.listen(PORT, function(){
 

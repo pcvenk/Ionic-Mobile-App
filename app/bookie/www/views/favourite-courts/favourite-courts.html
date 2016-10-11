@@ -5,11 +5,9 @@
 
       <ion-list>
         <ion-item class="item-avatar item-text-wrap item-icon-right"
-                  ng-repeat="court in courtList"
-                  ng-show="courts.favourites">
-
-                  <!--ng-class="{'favorites': court.favorites}"-->
-
+                  ng-repeat="court in favouriteCourts"
+                  ng-class="{'favorites': court.favourites}"
+        >
           <img ng-src="{{court.image}}">
           <h2 class="court-title">{{court.name}}</h2>
           <h4 class="court-address">{{court.address}}, {{court.postalCode}} {{court.location}}</h4>
@@ -24,13 +22,9 @@
           >Podrobnosti</a>
 
           <button class="button button-clear icon ion-star button-assertive"
-                  ng-click="setFavorites(court)"
-                  ng-show="court.favorites">
+                  ng-show="court.favourites">
           </button>
-          <ion-option-button class="button-dark"
-                             ng-click="setFavorites(court)">
-            <i class="icon ion-star"></i>
-          </ion-option-button>
+
         </ion-item>
       </ion-list>
 

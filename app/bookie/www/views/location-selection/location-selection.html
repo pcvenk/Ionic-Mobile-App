@@ -14,34 +14,60 @@
       </div>
 
       <ion-list>
+      <ion-item class="item-avatar item-text-wrap item-icon-right"
+                ng-repeat="court in courtList | filter: court.name"
+                ng-class="{'favorites': court.favourites}"
+      >
+        <img ng-src="{{court.image}}">
+        <h2 class="court-title">{{court.name}}</h2>
+        <h4 class="court-address">{{court.address}}, {{court.postalCode}} {{court.location}}</h4>
+        <p class="description">{{court.fulldescription | limitTo: 100}}
+          {{court.fulldescription.length > 120 ? "..." : ""}}</p>
+        <a class="button button-small button-clear icon-left ion-calendar button-balanced"
+           href="#/app/court-booking/{{court.courtNumber}}/{{court.name}}"
+        >Rezerviraj</a>
+
+        <a class="button button-small button-clear icon-left ion-ios-information-outline button-balanced"
+           href="#/app/location-selection/{{court.name}}"
+        >Podrobnosti</a>
+
+
+        <a class="button button-clear icon ion-star button-assertive"
+                ng-click="setFavorites(court)"
+                ng-show="court.favourites">
+        </a>
+        <ion-option-button class="button-dark"
+                           ng-click="setFavorites(court)">
+          <i class="icon ion-star"></i>
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+
+
+      <ion-list>
         <ion-item class="item-avatar item-text-wrap item-icon-right"
-                  ng-repeat="court in courtList | filter: court.name"
-                  ng-class="{'favorites': court.favorites}"
-                  >
+                  ng-repeat="court in favouriteCourts"
+                  ng-class="{'favorites': court.favourites}"
+        >
           <img ng-src="{{court.image}}">
           <h2 class="court-title">{{court.name}}</h2>
           <h4 class="court-address">{{court.address}}, {{court.postalCode}} {{court.location}}</h4>
           <p class="description">{{court.fulldescription | limitTo: 100}}
-                                {{court.fulldescription.length > 120 ? "..." : ""}}</p>
+            {{court.fulldescription.length > 120 ? "..." : ""}}</p>
           <a class="button button-small button-clear icon-left ion-calendar button-balanced"
-                  href="#/app/court-booking/{{court.courtNumber}}/{{court.name}}"
+             href="#/app/court-booking/{{court.courtNumber}}/{{court.name}}"
           >Rezerviraj</a>
 
           <a class="button button-small button-clear icon-left ion-ios-information-outline button-balanced"
-                    href="#/app/location-selection/{{court.name}}"
+             href="#/app/location-selection/{{court.name}}"
           >Podrobnosti</a>
 
           <button class="button button-clear icon ion-star button-assertive"
-                  ng-click="setFavorites(court)"
-                  ng-show="court.favorites">
+                  ng-show="court.favourites">
           </button>
-          <ion-option-button class="button-dark"
-                             ng-click="setFavorites(court)">
-            <i class="icon ion-star"></i>
-          </ion-option-button>
+
         </ion-item>
       </ion-list>
-
 
     </ion-content>
   </ion-view>

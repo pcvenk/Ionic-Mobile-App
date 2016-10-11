@@ -6,76 +6,21 @@ module.exports = function(app){
 
     // API routes
 
+    app.get('/api/courts', function(rew, res){
 
-    // app.get('/api/users', function(req, res){
-    //
-    //     var User = mongoose.model('User');
-    //
-    //     User.find(function(err, docs){
-    //
-    //         if(!err){
-    //             res.send(docs);
-    //         }else{
-    //             console.log(err);
-    //         }
-    //
-    //     });
-    //
-    // });
-    //
-    // app.post('/api/user', function(req, res){
-    //
-    //     var User = mongoose.model('User');
-    //
-    //     var user = new User(req.body);
-    //
-    //     user.save(function(err, docs){
-    //
-    //         if(!err){
-    //             res.status(200).send(docs);
-    //         }else{
-    //             res.send(err);
-    //         }
-    //
-    //     });
-    //
-    // });
+        var Court = mongoose.model('Court');
 
-    // var myHash;
-    //
-    // app.post('/api/login', function(req, res){
-    //
-    //     var data = req.body;
-    //     var email = data.email;
-    //     var password = data.password;
-    //
-    //     bcrypt.compare(password, myHash, function(err, _res) {
-    //
-    //         res.send(_res);
-    //     });
-    //
-    // });
-    //
-    // var myHash;
-    // app.post('/api/register', function(req, res){
-    //
-    //     var data = req.body;
-    //     var email = data.email;
-    //     var password = data.password;
-    //
-    //     bcrypt.genSalt(10, function(err, salt) {
-    //         bcrypt.hash(password, salt, function(err, hash) {
-    //             // Store hash in your password DB.
-    //
-    //             myHash = hash;
-    //             data.password = hash;
-    //             res.send(data);
-    //
-    //
-    //         });
-    //     });
-    //
-    // });
+        Court.find(function(err, docs){
+
+           if(!err){
+               res.send(docs)
+           }else{
+               res.send(err);
+           }
+
+        });
+
+    });
 
     app.post('/api/register', function(req, res){
 
