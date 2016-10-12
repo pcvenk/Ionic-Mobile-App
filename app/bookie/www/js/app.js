@@ -7,8 +7,7 @@
 angular.module('starter', [
   'ionic',
   'ionic-material',
-  'ui.router',
-  'ui.calendar',
+  'ui.router'
 ])
 
   .run(function($ionicPlatform) {
@@ -56,14 +55,20 @@ angular.module('starter', [
         views:{
           'menuContent':{
             templateUrl:'views/location-selection/location-selection.html',
-            controller:'CourtSelectionCtrl'
+            controller:'CourtSelectionCtrl',
+            resolve: {
+              list: function(courtService){
+                return courtService.getList();
+              }
+            }
+
           }
         }
 
       })
 
       .state('app.court-detail', {
-        url:'/location-selection/:courtID',
+        url:'/court-detail/:courtID',
         views:{
           'menuContent':{
             templateUrl:'views/location-selection/location-details/location-details.html',

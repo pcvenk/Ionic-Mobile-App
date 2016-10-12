@@ -2,7 +2,7 @@
 
   <ion-view view-title="Več informacij">
     <ion-content class="padding">
-      <ion-list ng-repeat="court in model.list | filter: {name: selectedCourt}">
+      <ion-list ng-repeat="court in courts | filter: {name: selectedCourt}">
 
         <ion-item class="item-text-wrap">
           <h1 class="court-title text-center">{{court.name}}</h1>

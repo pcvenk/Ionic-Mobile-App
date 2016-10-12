@@ -9,6 +9,7 @@ var init = function(){
 
 
         require('./server/models/registered-user');
+        require('./server/models/court');
 
 
         server.start();

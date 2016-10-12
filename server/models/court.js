@@ -1,19 +1,16 @@
 var mongoose = require('mongoose');
 
-var schema = new Schema('Court')({
+var schema = new mongoose.Schema({
 
     name: String,
     address: String,
     location: String,
     postalCode: Number,
-    image: { data: Buffer, contentType: String },
+    image: String,
     fulldescription: String,
     courtNumber: [],
     timetable: [],
     favourites: false
-
-
-
 
 });
 

@@ -4,7 +4,7 @@ var db = require('mongoose');
 
 exports.connect = function(success){
 
-    db.connect('mongodb://localhost:27017/bookie');
+    db.connect('mongodb://localhost/bookie');
 
     db.connection.on('error', function(error){
 

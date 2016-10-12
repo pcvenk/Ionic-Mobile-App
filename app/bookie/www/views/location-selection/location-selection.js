@@ -1,53 +1,25 @@
-angular.module('starter').controller('CourtSelectionCtrl', function($scope, $http, $state){
+angular.module('starter').controller('CourtSelectionCtrl', function($scope, courtService, $state){
 
- $scope.model = {
-   list: [],
-   item: {}
+  $scope.courts = courtService.model.list;
+  $scope.selectedCourt = $state.params.courtID;
 
- };
-
-  $http.get('../../assets/data/courts.json').success(function(data){
-
-
-    $scope.selectedCourt = $state.params.courtID;
-    $scope.courtList = data;
-    angular.copy($scope.courtList, $scope.model.list);
-    // $scope.model.list.push(data);
-
-  });
-
-
-
-  $scope.favouriteCourts = [];
-
-
-  $scope.setFavorites = function(court){
+  $scope.setFavourites = function(court){
 
     court.favourites = !court.favourites;
 
-    if(court.favourites){
-      console.log('Favorite');
+    console.log(id);
 
-      $scope.favouriteCourts.push(court);
-      $scope.fav = $state.params.fav;
-
-      // $scope.model.item.favourites = true;
-      // angular.copy(court, $scope.model.list);
-      // $scope.model.item.push(court);
-
-      // var updatedItem = $scope.model.item;
+      // courtService.update($scope.court, function(data){
       //
-      // $scope.updatedCourt = function(updatedItem){
-      //   var newItem = angular.copy(updatedItem);
-
-
-      // };
-    }
+      //
+      //   $scope.court = data;
+      //   console.log($scope.court);
+      //
+      // });
 
   };
 
-  console.log($scope.model.list);
-  console.log($scope.favouriteCourts);
+  console.log($scope.courts);
 
 });
 

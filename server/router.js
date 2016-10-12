@@ -6,19 +6,37 @@ module.exports = function(app){
 
     // API routes
 
-    app.get('/api/courts', function(rew, res){
+    app.get('/api/courts', function(req, res){
 
         var Court = mongoose.model('Court');
 
         Court.find(function(err, docs){
 
-           if(!err){
-               res.send(docs)
-           }else{
-               res.send(err);
-           }
+            if(!err){
+                res.send(docs);
+            }else{
+                console.log(err);
+            }
 
         });
+
+    });
+
+    app.put('/api/court/:id', function(req, res){
+
+        var courtData = req.body;
+        var courtId   = req.params.id;
+
+        var Court = mongoose.model('Court');
+
+        Court.findByIdAndUpdate(courtId, courtData, { 'new': true}, function(err, doc){
+
+            if(!err){
+                res.send(doc);
+            }else{
+                res.status(400).send(err);
+            }
+        })
 
     });
 
@@ -91,29 +109,29 @@ module.exports = function(app){
 
     });
 
-    app.get('/api/login-status', function(req, res){
-
-        if(req.session.user){
-            //res.sendStatus(200);
-            res.send(req.session.user);
-        }else{
-            res.sendStatus(401);
-        }
-
-    });
-
-    app.post('/api/logout', function(req, res){
-
-        req.session.destroy(function(err){
-            if(!err){
-                res.sendStatus(200);
-            }else{
-                console.log(err);
-                res.sendStatus(400);
-            }
-        });
-
-    });
+    // app.get('/api/login-status', function(req, res){
+    //
+    //     if(req.session.user){
+    //         //res.sendStatus(200);
+    //         res.send(req.session.user);
+    //     }else{
+    //         res.sendStatus(401);
+    //     }
+    //
+    // });
+    //
+    // app.post('/api/logout', function(req, res){
+    //
+    //     req.session.destroy(function(err){
+    //         if(!err){
+    //             res.sendStatus(200);
+    //         }else{
+    //             console.log(err);
+    //             res.sendStatus(400);
+    //         }
+    //     });
+    //
+    // });
 
 
 
