@@ -9805,7 +9805,7 @@ a.button {
   transition-duration: 0s; }
 
 .register-wrapper ion-view {
-  background-image: url("../../assets/images/backg.jpg"); }
+  background-image: url("../../assets/images/logout-screen.jpg"); }
 
 .register-wrapper .list {
   margin-top: 50px;
@@ -9840,7 +9840,7 @@ a.button {
   color: #002e25; }
 
 .register-wrapper ion-view {
-  background-image: url("../../assets/images/backg.jpg"); }
+  background-image: url("../../assets/images/logout-screen.jpg"); }
 
 .register-wrapper .list {
   margin-top: 50px;
