@@ -30,10 +30,10 @@ $ionic serve
 ```
 
 ####ASSETS
-All design files can be found under ````
+All design files can be found under 
+````
 server/public/assets
 ````
 ####PLATFORM
 
 see the other branch
-
