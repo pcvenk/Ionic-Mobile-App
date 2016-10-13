@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="246a9bb6-71fe-4615-aade-aab04a1c4bbe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bookie/www/assets/images/logout-screen.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bookie/www/views/logout/logout.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bookie/www/views/logout/logout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bookie/www/views/logout/logout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bookie/scss/ionic.app.scss" afterPath="$PROJECT_DIR$/app/bookie/scss/ionic.app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bookie/www/css/ionic.app.css" afterPath="$PROJECT_DIR$/app/bookie/www/css/ionic.app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bookie/www/css/ionic.app.min.css" afterPath="$PROJECT_DIR$/app/bookie/www/css/ionic.app.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bookie/www/index.html" afterPath="$PROJECT_DIR$/app/bookie/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bookie/www/js/app.js" afterPath="$PROJECT_DIR$/app/bookie/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bookie/www/services/authService.js" afterPath="$PROJECT_DIR$/app/bookie/www/services/authService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bookie/www/templates/menu.html" afterPath="$PROJECT_DIR$/app/bookie/www/templates/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bookie/www/views/location-selection/location-selection.js" afterPath="$PROJECT_DIR$/app/bookie/www/views/location-selection/location-selection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bookie/www/views/login/login.html" afterPath="$PROJECT_DIR$/app/bookie/www/views/login/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bookie/www/views/register/register.html" afterPath="$PROJECT_DIR$/app/bookie/www/views/register/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/router.js" afterPath="$PROJECT_DIR$/server/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="Bookie.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -160,7 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/bookie/scss/register.scss" />
         <option value="$PROJECT_DIR$/app/bookie/gulpfile.js" />
         <option value="$PROJECT_DIR$/app/bookie/ionic.config.json" />
         <option value="$PROJECT_DIR$/app/bookie/www/views/login/login.less" />
@@ -211,6 +195,7 @@
         <option value="$PROJECT_DIR$/server/router.js" />
         <option value="$PROJECT_DIR$/app/bookie/www/services/authService.js" />
         <option value="$PROJECT_DIR$/app/bookie/www/js/app.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -391,12 +376,12 @@
       <workItem from="1476000302812" duration="6852000" />
       <workItem from="1476017922652" duration="51404000" />
       <workItem from="1476174752554" duration="4688000" />
-      <workItem from="1476185018132" duration="35429000" />
+      <workItem from="1476185018132" duration="35611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223425000" />
+    <option name="totallyTimeSpent" value="223607000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
