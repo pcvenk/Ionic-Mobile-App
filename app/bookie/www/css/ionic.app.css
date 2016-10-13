@@ -9905,5 +9905,13 @@ h1 {
 .logout-wrapper ion-view {
   background-image: url("../../assets/images/logout-screen.jpg"); }
 
-.logout-wrapper ion-content {
-  margin-top: 150px; }
+.logout-wrapper h3 {
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 56px;
+  color: #002e25; }
+
+.logout-wrapper .list {
+  margin-top: 50px;
+  margin-left: 25px;
+  margin-right: 25px; }

@@ -1,6 +1,6 @@
 {
   "name": "bookie",
-  "app_id": "",
+  "app_id": "46ca753a",
   "watchPatterns": [
     "www/**/*",
     "!www/lib/**/*"
