@@ -1,6 +1,6 @@
 <div class="register-wrapper">
 
-  <ion-view view-title="main module">
+  <ion-view view-title="Registracija">
     <!-- do you want padding? -->
     <ion-content class="padding" scroll="false">
       <!-- content goes here -->
@@ -12,14 +12,14 @@
         </div>
 
         <label class="item item-input item-floating-label">
-          <span class="input-label">Email</span>
+          <span class="input-label">E-pošta</span>
           <input type="email"
                  placeholder="Email"
                  ng-model="user.email"
                  ng-required="true">
         </label>
         <label class="item item-input item-floating-label">
-          <span class="input-label">Password</span>
+          <span class="input-label">Geslo</span>
           <input type="password"
                  placeholder="Password"
                  autocomplete="new-password"
@@ -30,8 +30,8 @@
 
 
       <div class="btn-container">
-        <div class="button button-balanced button-block" ng-click="register()">Register</div>
-        <div class="centered">If you already have an account <span><a ui-sref="login">Login</a></span></div>
+        <div class="button button-balanced button-block" ng-click="register()">Registracija</div>
+        <div class="centered">Če že imaš ustvarjen račun, se <span><a ui-sref="login">prijavi</a></span></div>
       </div>
 
 

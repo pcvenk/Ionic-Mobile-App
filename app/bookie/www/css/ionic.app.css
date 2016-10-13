@@ -9889,3 +9889,9 @@ h1 {
 
 .favorites > .item-content {
   background-color: #f9f4df !important; }
+
+.logout-wrapper ion-view {
+  background-image: url("../../assets/images/logout-screen.jpg"); }
+
+.logout-wrapper ion-content {
+  margin-top: 150px; }

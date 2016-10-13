@@ -109,29 +109,31 @@ module.exports = function(app){
 
     });
 
-    // app.get('/api/login-status', function(req, res){
-    //
-    //     if(req.session.user){
-    //         //res.sendStatus(200);
-    //         res.send(req.session.user);
-    //     }else{
-    //         res.sendStatus(401);
-    //     }
-    //
-    // });
-    //
-    // app.post('/api/logout', function(req, res){
-    //
-    //     req.session.destroy(function(err){
-    //         if(!err){
-    //             res.sendStatus(200);
-    //         }else{
-    //             console.log(err);
-    //             res.sendStatus(400);
-    //         }
-    //     });
-    //
-    // });
+    app.post('/api/logout', function(req, res){
+
+        req.session.destroy(function(err){
+
+           if(!err){
+               res.sendStatus(200);
+           }else{
+               console.log(err);
+               res.sendStatus(400);
+           }
+
+        });
+
+    });
+
+    app.post('/api/login-status', function(req, res){
+
+        if(req.session.user){
+            res.send(req.session.user);
+        }else{
+            res.sendStatus(401);
+        }
+
+    });
+
 
 
 

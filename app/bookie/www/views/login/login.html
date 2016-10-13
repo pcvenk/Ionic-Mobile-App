@@ -1,7 +1,7 @@
 <div class="register-wrapper">
 
-  <ion-view view-title="main module">
-    <!-- do you want padding? -->
+  <ion-view view-title="Prijava">
+
     <ion-content class="padding" scroll="false">
       <!-- content goes here -->
       <div class="list">
@@ -12,14 +12,14 @@
         </div>
 
         <label class="item item-input item-floating-label">
-          <span class="input-label">Email</span>
+          <span class="input-label">E-pošta</span>
           <input type="email"
                  placeholder="Email"
                  ng-model="loginUser.email"
                  ng-required="true">
         </label>
         <label class="item item-input item-floating-label">
-          <span class="input-label">Password</span>
+          <span class="input-label">Geslo</span>
           <input type="password"
                  placeholder="Password"
                  autocomplete="new-password"
@@ -30,7 +30,7 @@
 
 
       <div class="btn-container">
-        <div class="button button-balanced button-block" ng-click="login()">Login</div>
+        <div class="button button-balanced button-block" ng-click="login()">Prijava</div>
       </div>
 
 

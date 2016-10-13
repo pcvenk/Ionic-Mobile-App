@@ -57,6 +57,7 @@ angular.module('starter', [
             templateUrl:'views/location-selection/location-selection.html',
             controller:'CourtSelectionCtrl',
             resolve: {
+
               list: function(courtService){
                 return courtService.getList();
               }
@@ -73,6 +74,15 @@ angular.module('starter', [
           'menuContent':{
             templateUrl:'views/location-selection/location-details/location-details.html',
             controller:'CourtSelectionCtrl'
+            // resolve: {
+            //
+            //   loginStatus:function($http, authService){
+            //
+            //     return authService.loginStatus();
+            //   }
+            //
+            // }
+
           }
         }
       })
@@ -83,6 +93,32 @@ angular.module('starter', [
           'menuContent':{
             templateUrl:'views/favourite-courts/favourite-courts.html',
             controller:'CourtSelectionCtrl'
+            // resolve: {
+            //
+            //   loginStatus:function($http, authService){
+            //
+            //     return authService.loginStatus();
+            //   }
+            //
+            // }
+          }
+        }
+      })
+
+      .state('app.logout', {
+        url:'/logout',
+        views:{
+          'menuContent':{
+            templateUrl:'views/logout/logout.html',
+            controller:'LogoutCtrl'
+            // resolve: {
+            //
+            //   loginStatus:function($http, authService){
+            //
+            //     return authService.loginStatus();
+            //   }
+            //
+            // }
           }
         }
       })
@@ -93,6 +129,14 @@ angular.module('starter', [
           'menuContent':{
             templateUrl:'views/court-booking/court-booking.html',
             controller:'CourtBookingCtrl'
+            // resolve: {
+            //
+            //   loginStatus:function($http, authService){
+            //
+            //     return authService.loginStatus();
+            //   }
+            //
+            // }
           }
         }
       });
@@ -100,7 +144,7 @@ angular.module('starter', [
 
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/location-selection');
+    $urlRouterProvider.otherwise('/location-selection');
   });
 
 angular.module('starter').run(function($rootScope) {

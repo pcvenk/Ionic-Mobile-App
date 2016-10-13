@@ -9,7 +9,7 @@ angular.module('starter').controller('CourtSelectionCtrl', function($scope, cour
 
     console.log(id);
 
-      // courtService.update($scope.court, function(data){
+      // courtService.update($scope.court._id, $scope.court, function(data){
       //
       //
       //   $scope.court = data;

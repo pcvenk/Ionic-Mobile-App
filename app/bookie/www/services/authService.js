@@ -30,20 +30,11 @@ angular.module('starter').factory('authService',function($http) {
         });
 
     },
-    loginStatus:function(){
-
-      return $http.get('/api/login-status');
-      // var promise = $http.get('/api/login-status');
-      //
-      // promise.then(function(res){
-      //
-      //     auth.model.user = res.data;
-      //
-      // });
-
-      // return promise;
-
-    },
+    // loginStatus:function(){
+    //
+    //   return $http.get('/api/login-status');
+    //
+    // },
     logOut:function(cb){
 
       $http.post('/api/logout', {})
