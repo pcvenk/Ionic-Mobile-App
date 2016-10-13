@@ -6,7 +6,7 @@ angular.module('starter').controller('CourtSelectionCtrl', function($scope, cour
   $scope.setFavourites = function(court){
 
     court.favourites = !court.favourites;
-
+    court.favourites = true;
     console.log(id);
 
       // courtService.update($scope.court._id, $scope.court, function(data){
