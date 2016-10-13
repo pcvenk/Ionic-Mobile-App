@@ -9833,6 +9833,12 @@ a.button {
   text-align: center;
   font-size: 15px; }
 
+.register-wrapper h3 {
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 42px;
+  color: #002e25; }
+
 .register-wrapper ion-view {
   background-image: url("../../assets/images/backg.jpg"); }
 
@@ -9871,7 +9877,7 @@ a.button {
   color: #004358; }
 
 .court-booking-wrapper .booked {
-  background-color: #434296 !important; }
+  background-color: #009688; }
 
 .location-selection-wrapper .court-title {
   font-size: 20px;

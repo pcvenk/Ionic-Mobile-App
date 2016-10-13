@@ -2,13 +2,13 @@ angular.module('starter').controller('LogoutCtrl', function($scope, $state, auth
 
   $scope.logout = function(){
 
-    // authService.logOut = function(){
+    // authService.logOut(function(){
 
       $state.go('login');
 
-    };
+    // });
 
-  // };
+  };
 
 
 });

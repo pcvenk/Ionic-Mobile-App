@@ -30,11 +30,12 @@ angular.module('starter').factory('authService',function($http) {
         });
 
     },
-    // loginStatus:function(){
-    //
-    //   return $http.get('/api/login-status');
-    //
-    // },
+    loginStatus:function(){
+
+      return $http.get('/api/login-status');
+
+
+    },
     logOut:function(cb){
 
       $http.post('/api/logout', {})
