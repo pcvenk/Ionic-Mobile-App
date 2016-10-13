@@ -9808,7 +9808,7 @@ a.button {
   background-image: url("../../assets/images/backg.jpg"); }
 
 .register-wrapper .list {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 25px;
   margin-right: 25px; }
 
@@ -9836,14 +9836,14 @@ a.button {
 .register-wrapper h3 {
   font-family: Roboto;
   font-weight: 200;
-  font-size: 42px;
+  font-size: 56px;
   color: #002e25; }
 
 .register-wrapper ion-view {
   background-image: url("../../assets/images/backg.jpg"); }
 
 .register-wrapper .list {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 25px;
   margin-right: 25px; }
 
@@ -9867,6 +9867,12 @@ a.button {
   margin: 0 auto;
   text-align: center;
   font-size: 15px; }
+
+.register-wrapper h3 {
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 56px;
+  color: #002e25; }
 
 .court-booking-wrapper .selected-court {
   margin-top: 15px; }
