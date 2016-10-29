@@ -15,6 +15,9 @@ For example, you might change some of the default colors:*/
   used under CC BY http://creativecommons.org/licenses/by/4.0/
   Modified icons to fit ionicon’s grid from original.
 */
+@import url("https://fonts.googleapis.com/css?family=Roboto:700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 @font-face {
   font-family: "Ionicons";
   src: url("../lib/ionic/fonts/ionicons.eot?v=2.0.1");
@@ -9834,8 +9837,8 @@ a.button {
   font-size: 15px; }
 
 .register-wrapper h3 {
-  font-family: Roboto;
-  font-weight: 200;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   font-size: 56px;
   color: #002e25; }
 
@@ -9869,8 +9872,8 @@ a.button {
   font-size: 15px; }
 
 .register-wrapper h3 {
-  font-family: Roboto;
-  font-weight: 200;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   font-size: 56px;
   color: #002e25; }
 
@@ -9906,7 +9909,7 @@ h1 {
   background-image: url("../../assets/images/logout-screen.jpg"); }
 
 .logout-wrapper h3 {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: 200;
   font-size: 56px;
   color: #002e25; }
