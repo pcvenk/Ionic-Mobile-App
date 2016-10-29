@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="246a9bb6-71fe-4615-aade-aab04a1c4bbe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bookie/www/css/ionic.app.css" afterPath="$PROJECT_DIR$/app/bookie/www/css/ionic.app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bookie/www/css/ionic.app.min.css" afterPath="$PROJECT_DIR$/app/bookie/www/css/ionic.app.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bookie/www/index.html" afterPath="$PROJECT_DIR$/app/bookie/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bookie/www/views/login/login.scss" afterPath="$PROJECT_DIR$/app/bookie/www/views/login/login.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bookie/www/views/logout/logout.scss" afterPath="$PROJECT_DIR$/app/bookie/www/views/logout/logout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bookie/www/views/register/register.scss" afterPath="$PROJECT_DIR$/app/bookie/www/views/register/register.scss" />
     </list>
     <ignored path="Bookie.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,8 +48,8 @@
       <file leaf-file-name="ionic.app.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/bookie/www/css/ionic.app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="9840" column="16" selection-start-line="9840" selection-start-column="16" selection-end-line="9840" selection-end-column="16" />
+            <state relative-caret-position="90">
+              <caret line="9821" column="0" selection-start-line="9821" selection-start-column="0" selection-end-line="9821" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -605,12 +599,12 @@
       <workItem from="1476369001824" duration="7836000" />
       <workItem from="1476515512821" duration="3682000" />
       <workItem from="1477493402097" duration="552000" />
-      <workItem from="1477573110009" duration="2149000" />
+      <workItem from="1477573110009" duration="2258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244803000" />
+    <option name="totallyTimeSpent" value="244912000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -979,8 +973,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/bookie/www/css/ionic.app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="9840" column="16" selection-start-line="9840" selection-start-column="16" selection-end-line="9840" selection-end-column="16" />
+        <state relative-caret-position="90">
+          <caret line="9821" column="0" selection-start-line="9821" selection-start-column="0" selection-end-line="9821" selection-end-column="0" />
           <folding />
         </state>
       </provider>
