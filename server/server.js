@@ -25,7 +25,8 @@ module.exports = {
             secret: 'lhdfs903wrodp89wfejo90qcisoj'
         }));
 
-        
+        //todo use the more common syntax like this "app.use('/', express.static(path.join(__dirname, 'app/bookie/www'
+        //install the path module and require it at the top
         app.use('/', express.static('app/bookie/www'));
         app.use('/assets', express.static('server/public/assets'));
 
